@@ -1,23 +1,26 @@
+
 ### installScript
 - Please use a new SD card if installing on an arm/sbc device.
 - This script will install openmediavault, omv-extras, and flashmemory. If you already have openmediavault installed don't worry, your openmediavault will be preserved, only the not installed will be added to the system.
 
-### Installation 
+### Installation
+!!! Führe als erstes folgenden Befehl aus: `sudo rm -f /etc/systemd/network/99-default.link`
+
 To install OMV, OMV-Extras and Flashmemory copy and paste this line in the Terminal and press Enter. The installation will take some time, so enjoy the text flying on the screen. 
 
 ***The installation process demands sudo utilization.***
 
 To download and execute the script you can use either *wget* or *curl*, feel free to use what you prefer!
 
+*curl script*
+```bash
+sudo curl -sSL https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install | sudo bash
+```
+
 *wget script*
 ####  
 ```bash
 sudo wget -O - https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install | sudo bash
-```
-
-*curl script*
-```bash
-sudo curl -sSL https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install | sudo bash
 ```
 ### To skip network setup
 If you don't wanna use the network setup steps of the script, please use copy and paste the followings lines to the terminal. 
