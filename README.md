@@ -13,7 +13,7 @@ sudo curl -sSL https://github.com/OpenMediaVault-Plugin-Developers/installScript
 sudo rm -f /etc/systemd/network/99-default.link
 wget https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install
 chmod +x install
-sudo ./install -n
+sudo ./install -f
 ```
 ---
 
