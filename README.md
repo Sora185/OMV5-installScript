@@ -1,5 +1,22 @@
 ORIGINALES REPO: https://github.com/OpenMediaVault-Plugin-Developers/installScript
 
+### TL;DR
+
+#### Normal
+```bash
+sudo rm -f /etc/systemd/network/99-default.link
+sudo curl -sSL https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install | sudo bash
+```
+
+#### Ohne Flash-Plugin
+```bash
+sudo rm -f /etc/systemd/network/99-default.link
+wget https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install
+chmod +x install
+sudo ./install -n
+```
+---
+
 ### installScript
 - Please use a new SD card if installing on an arm/sbc device.
 - This script will install openmediavault, omv-extras, and flashmemory. If you already have openmediavault installed don't worry, your openmediavault will be preserved, only the not installed will be added to the system.
