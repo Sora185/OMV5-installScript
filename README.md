@@ -1,4 +1,4 @@
-ORIGINALES REPO: https://github.com/OpenMediaVault-Plugin-Developers/installScript
+ORIGINAL REPO: https://github.com/OpenMediaVault-Plugin-Developers/installScript
 
 ### TL;DR
 
@@ -8,7 +8,7 @@ sudo rm -f /etc/systemd/network/99-default.link
 sudo curl -sSL https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install | sudo bash
 ```
 
-#### Ohne Flash-Plugin
+#### Without Flash-Plugin
 ```bash
 sudo rm -f /etc/systemd/network/99-default.link
 wget https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install
